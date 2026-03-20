@@ -13,8 +13,8 @@ This vibe-coded project verifies HTTP, SOCKS5, and SOCKS4 proxies and exports va
 2. Merges with an alternate proxy source.
 3. Deduplicates proxies per protocol.
 4. Checks each proxy with two requests:
-   - `https://arch-mirror.wtako.net/lastupdate` (required to pass)
-   - `https://saren.wtako.net/ip.php` (best-effort IP detection)
+   - `https://arch-mirror.wtako.net/lastupdate` (CF security off, required to pass)
+   - `https://saren.wtako.net/ip.php` (CF security normal, best-effort IP detection)
 5. Enforces a **60s total timeout budget per proxy** for the two requests combined.
 6. Writes valid proxies to:
 
